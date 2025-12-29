@@ -7,7 +7,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 API_ID = 39824478 #
 API_HASH = '8bb2d770e5cbcb9202e02a745e66f800' #
 BOT_TOKEN = '8237587692:AAG7qnxL1MuUALmzLlWwTleYfpO9HUgv9Q8' #
-ADSTERRA_LINK = 'මෙතැනට_ඔබේ_ADSTERRA_DIRECT_LINK_එක_දමන්න' #
+ADSTERRA_LINK = 'https://www.effectivegatecpm.com/cg9xbsb1t?key=5a1e27cbefc93b84473d1598590647d0' #
 
 # 1. BOT INTERFACE (User Interaction)
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -25,4 +25,5 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 if __name__ == '__main__':
     application = ApplicationBuilder().token(BOT_TOKEN).build()
     application.add_handler(CommandHandler('start', start))
+
     application.run_polling()
